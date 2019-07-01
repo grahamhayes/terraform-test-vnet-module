@@ -1,3 +1,8 @@
+resource "azurerm_resource_group" "${var.rg_name}" {
+  name     = "${var.rg_name}"
+  location = "${var.location}"
+}
+
 resource "azurerm_virtual_network" "${var.name}" {
   name                = "${var.name}"
   location            = "${var.location}"
