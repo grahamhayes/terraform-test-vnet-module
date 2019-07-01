@@ -1,6 +1,6 @@
-resource "azurerm_resource_group" "${var.rg_name}" {
-  name     = "${var.rg_name}"
-  location = "${var.location}"
+module "rg" {
+  source = "github.com/grahamhayes/terraform-test-vnet-module//rg?ref=v0.3.0"
+  name   = "${var.rg_name}"
 }
 
 resource "azurerm_virtual_network" "${var.name}" {
