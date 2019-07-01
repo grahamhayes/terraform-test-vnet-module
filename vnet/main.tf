@@ -1,5 +1,5 @@
 module "rg" {
-  source   = "github.com/grahamhayes/terraform-test-vnet-module//rg?ref=v0.3.0"
+  source   = "github.com/grahamhayes/terraform-test-vnet-module//rg?ref=v0.4.0"
   name     = "${var.rg_name}"
   location = "${var.location}"
 }
